@@ -1,7 +1,31 @@
 aid: morpheus-space
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/morpheus-space.png
 name: Morpheus Space
-description: Morpheus Space is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Morpheus Space is an in-space mobility company building electric propulsion
+  systems and mission-design software for the New Space economy. Founded in 2018
+  out of the Technical University of Dresden, its second-generation GO-2 system
+  uses FEEP (Field Emission Electric Propulsion) technology to deliver
+  continuous, chemical-free thrust for satellite constellation deployment,
+  station keeping, collision avoidance, repositioning, and deorbiting. The
+  company also offers Journey, a mission simulation and design platform that
+  matches simulated requirements to available satellite subsystems. Morpheus
+  Space markets ITAR-free solutions and is backed by investors including
+  Techstars, Alpine Space Ventures, Airbus Ventures, Lavrock Ventures, and
+  In-Q-Tel. The company publishes no public developer API; its only
+  machine-facing surface is a platform-hosted (Wix) site MCP endpoint and an
+  auto-generated llms.txt for agent access to public marketing content.
 url: https://raw.githubusercontent.com/api-evangelist/morpheus-space/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Space
+- Satellite
+- Propulsion
+- Electric Propulsion
+- Aerospace
+- Mission Design
+- New Space
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +53,31 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://morpheus.space/
+  url: https://www.morpheus.space/
+- type: About
+  url: https://www.morpheus.space/company
+- type: Careers
+  url: https://careers.morpheus.space/
+- type: Support
+  url: https://www.morpheus.space/contact-sales
+- type: Blog
+  url: https://www.morpheus.space/media-newsroom
+- type: PrivacyPolicy
+  url: https://www.morpheus.space/privacy-cookie-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/morpheus-space
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/morpheus-space
+- type: MCPServer
+  url: mcp/morpheus-space-mcp.yml
+- type: LLMsTxt
+  url: llms/morpheus-space-llms.txt
+- type: WellKnown
+  url: well-known/morpheus-space-well-known.yml
+- type: DomainSecurity
+  url: security/morpheus-space-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1

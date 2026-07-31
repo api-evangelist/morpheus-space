@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of morpheus.space well-known paths
+host: www.morpheus.space
+notes: >-
+  Wix-hosted marketing site. No standard well-known descriptors are published;
+  the host returns HTTP 400 for these paths. A Wix Site MCP endpoint and an
+  auto-generated /llms.txt (HTTP 200) are present and captured separately.
+probes:
+- path: /.well-known/security.txt
+  status: 400
+  present: false
+- path: /.well-known/openid-configuration
+  status: 400
+  present: false
+- path: /.well-known/oauth-authorization-server
+  status: 400
+  present: false
+- path: /.well-known/api-catalog
+  status: 400
+  present: false
+- path: /.well-known/ai-plugin.json
+  status: 400
+  present: false
+- path: /llms.txt
+  status: 200
+  present: true
+  file: ../llms/morpheus-space-llms.txt
