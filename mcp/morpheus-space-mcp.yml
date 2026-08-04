@@ -8,7 +8,8 @@ description: >-
   product API from Morpheus Space. It surfaces public site content, business
   details, and any Wix business-solution APIs installed on the site. No
   authentication is required; only public site information is accessible.
-status: available
+status: published
+status_raw: available
 transport: streamable-http
 endpoint: https://www.morpheus.space/_api/mcp
 authentication: none
