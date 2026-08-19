@@ -2,11 +2,9 @@ generated: '2026-07-20'
 method: searched
 source: https://www.morpheus.space/llms.txt (Wix Site MCP, auto-advertised)
 name: Morpheus Space Site MCP
-description: >-
-  Wix-provided Site MCP server for morpheus.space. This is a platform-hosted
-  (Wix) MCP endpoint auto-exposed for the marketing site, not a first-party
-  product API from Morpheus Space. It surfaces public site content, business
-  details, and any Wix business-solution APIs installed on the site. No
+description: Wix-provided Site MCP server for morpheus.space. This is a platform-hosted (Wix) MCP endpoint
+  auto-exposed for the marketing site, not a first-party product API from Morpheus Space. It surfaces
+  public site content, business details, and any Wix business-solution APIs installed on the site. No
   authentication is required; only public site information is accessible.
 status: published
 status_raw: available
@@ -23,10 +21,8 @@ tools:
   parameters:
   - searchTerm
 - name: SearchSiteApiDocs
-  description: >-
-    Retrieves the API documentation for the Wix business solutions installed on
-    this site and informs the AI client how to use the APIs. Use for querying
-    products and services.
+  description: Retrieves the API documentation for the Wix business solutions installed on this site and
+    informs the AI client how to use the APIs. Use for querying products and services.
   parameters:
   - searchTerm
 - name: GenerateVisitorToken
@@ -52,6 +48,11 @@ capabilities:
 - Book services and make reservations
 - Start a purchase and be directed to the site to complete checkout
 - Ask questions and get relevant answers without browsing the site
-notes: >-
-  Discovered via the site's advertised /llms.txt. The endpoint and tool list are
-  standard across Wix-hosted sites; they were not authored by Morpheus Space.
+notes: Discovered via the site's advertised /llms.txt. The endpoint and tool list are standard across
+  Wix-hosted sites; they were not authored by Morpheus Space.
+deployment:
+  mode: remote
+  verified: searched
+  tools: 7
+  checked: '2026-08-12'
+  source: catalog MCP census
